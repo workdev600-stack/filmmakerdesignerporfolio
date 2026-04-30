@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>DESIGNER.PORTFOLIO | Digital Designer &amp; Curator</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&amp;family=Inter:wght@300;400;600&amp;family=Manrope:wght@400;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                colors: {
+                  "tertiary": "#5c5d5d",
+                  "surface-container": "#f0eded",
+                  "surface-container-high": "#eae7e7",
+                  "tertiary-fixed": "#e3e2e2",
+                  "surface-bright": "#fbf9f8",
+                  "on-tertiary-fixed-variant": "#464747",
+                  "error": "#ba1a1a",
+                  "secondary-container": "#e4e2e1",
+                  "on-secondary-container": "#656464",
+                  "surface-tint": "#464fcd",
+                  "on-tertiary": "#ffffff",
+                  "primary-fixed-dim": "#bec2ff",
+                  "outline-variant": "#c6c5d6",
+                  "on-error-container": "#93000a",
+                  "surface": "#fbf9f8",
+                  "on-primary-container": "#fffdff",
+                  "on-primary-fixed-variant": "#2c33b5",
+                  "on-background": "#1b1c1c",
+                  "on-surface": "#1b1c1c",
+                  "on-surface-variant": "#454654",
+                  "surface-container-lowest": "#ffffff",
+                  "secondary-fixed": "#e4e2e1",
+                  "surface-dim": "#dcd9d9",
+                  "on-tertiary-container": "#fffdfd",
+                  "on-primary-fixed": "#00016d",
+                  "on-secondary-fixed-variant": "#474747",
+                  "inverse-primary": "#bec2ff",
+                  "error-container": "#ffdad6",
+                  "tertiary-container": "#757575",
+                  "primary-fixed": "#e0e0ff",
+                  "primary": "#444ccc",
+                  "tertiary-fixed-dim": "#c7c6c6",
+                  "background": "#fbf9f8",
+                  "on-secondary": "#ffffff",
+                  "on-secondary-fixed": "#1b1c1c",
+                  "surface-variant": "#e4e2e1",
+                  "surface-container-highest": "#e4e2e1",
+                  "secondary-fixed-dim": "#c8c6c6",
+                  "on-tertiary-fixed": "#1b1c1c",
+                  "primary-container": "#5e67e6",
+                  "inverse-on-surface": "#f3f0f0",
+                  "on-error": "#ffffff",
+                  "secondary": "#5f5e5e",
+                  "outline": "#767685",
+                  "surface-container-low": "#f6f3f2",
+                  "on-primary": "#ffffff",
+                  "inverse-surface": "#303030"
+                },
+                fontFamily: {
+                  "headline": ["Manrope", "sans-serif"],
+                  "body": ["Inter", "sans-serif"],
+                  "label": ["Inter", "sans-serif"],
+                  "antonio": ["Antonio", "sans-serif"]
+                },
+                borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+              },
+            },
+          }
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+    </style>
+  </head>
+  <body id="home" class="...">
+
+  <div id="nav"></div>
+
+  <div id="hero"></div>
+
+  <div id="services"></div>
+
+  <div id="work"></div>
+
+  <div id="about"></div>
+
+  <div id="faq"></div>
+
+  <div id="footer"></div>
+  <script>
+  const loadComponent = async (id, file) => {
+    try {
+      const res = await fetch(file);
+      if (!res.ok) throw new Error(res.status);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    } catch (err) {
+      console.error(`Error loading ${file}:`, err);
+    }
+  };
+
+  loadComponent("nav", "./components/nav.html");
+  loadComponent("hero", "./components/hero.html");
+  loadComponent("services", "./components/services.html");
+  loadComponent("work", "./components/work.html");
+  loadComponent("about", "./components/about.html");
+  loadComponent("faq", "./components/faq.html");
+  loadComponent("footer", "./components/footer.html");
+</script>
+  </body>
+  
+  </body>
+</html>
