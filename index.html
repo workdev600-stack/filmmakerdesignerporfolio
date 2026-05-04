@@ -83,7 +83,19 @@
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
       }
+      .active-link {
+        color: #444CCC;
+        border-bottom: 2px solid #444CCC;
+        opacity: 1 !important;
+      }
     </style>
+    <style>
+    .active-link {
+      color: #444CCC !important;
+      border-bottom: 2px solid #444CCC;
+      opacity: 1 !important;
+    }
+</style>
   </head>
   <body id="home" class="...">
 
@@ -100,27 +112,9 @@
   <div id="faq"></div>
 
   <div id="footer"></div>
-  <script>
-  const loadComponent = async (id, file) => {
-    try {
-      const res = await fetch(file);
-      if (!res.ok) throw new Error(res.status);
-      const html = await res.text();
-      document.getElementById(id).innerHTML = html;
-    } catch (err) {
-      console.error(`Error loading ${file}:`, err);
-    }
-  };
+  
 
-  loadComponent("nav", "./components/nav.html");
-  loadComponent("hero", "./components/hero.html");
-  loadComponent("services", "./components/services.html");
-  loadComponent("work", "./components/work.html");
-  loadComponent("about", "./components/about.html");
-  loadComponent("faq", "./components/faq.html");
-  loadComponent("footer", "./components/footer.html");
-</script>
   </body>
   
-  </body>
+ <script src="./js/index.js"></script>
 </html>

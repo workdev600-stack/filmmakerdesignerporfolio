@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Project Archive | DESIGNER.PORTFOLIO</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Antonio, Inter, Manrope -->
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&amp;family=Inter:wght@300;400;500;600&amp;family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#464747",
+                    "outline-variant": "#c6c5d6",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#e4e2e1",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "on-primary-fixed": "#00016d",
+                    "outline": "#767685",
+                    "surface-tint": "#464fcd",
+                    "on-secondary-container": "#656464",
+                    "surface-bright": "#fbf9f8",
+                    "surface-dim": "#dcd9d9",
+                    "secondary": "#5f5e5e",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#5c5d5d",
+                    "surface-variant": "#e4e2e1",
+                    "secondary-container": "#e4e2e1",
+                    "primary-fixed": "#e0e0ff",
+                    "primary": "#444ccc",
+                    "secondary-fixed-dim": "#c8c6c6",
+                    "on-tertiary-container": "#fffdfd",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "inverse-primary": "#bec2ff",
+                    "primary-fixed-dim": "#bec2ff",
+                    "on-surface": "#1b1c1c",
+                    "on-secondary-fixed-variant": "#474747",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#c7c6c6",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#f6f3f2",
+                    "on-background": "#1b1c1c",
+                    "inverse-surface": "#303030",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#fffdff",
+                    "inverse-on-surface": "#f3f0f0",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#2c33b5",
+                    "on-surface-variant": "#454654",
+                    "surface": "#fbf9f8",
+                    "tertiary-fixed": "#e3e2e2",
+                    "tertiary-container": "#757575",
+                    "surface-container": "#f0eded",
+                    "surface-container-highest": "#e4e2e1",
+                    "error": "#ba1a1a",
+                    "primary-container": "#5e67e6",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#eae7e7",
+                    "background": "#fbf9f8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Antonio", "Manrope", "sans-serif"],
+                    "display": ["Antonio", "Manrope", "sans-serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            background: rgba(251, 249, 248, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+        @media (max-width: 768px) {
+            .editorial-grid {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 bg-[#FBF9F8]/80 dark:bg-[#1B1C1C]/80 backdrop-blur-xl">
+  <div class="flex items-center px-8 py-6 max-w-screen-2xl mx-auto relative">
+    <div class="font-['Antonio'] font-bold text-[#1B1C1C] dark:text-[#FBF9F8] tracking-tighter text-2xl">
+      <a href="#home">DESIGNER.PORTFOLIO</a>
+    </div>
+    <div class="hidden md:flex items-center gap-12 mx-auto">
+      <a class="nav-link font-['Antonio'] uppercase tracking-tight text-xl text-[#1B1C1C] dark:text-[#FBF9F8]  opacity-60 hover:opacity-100  transition-opacity duration-300" href="./index.html#home">Home</a>
+      <a class="nav-link font-['Antonio'] uppercase tracking-tight text-xl text-[#1B1C1C] dark:text-[#FBF9F8] opacity-60 hover:opacity-100 transition-opacity duration-300" href="./index.html#services">Services</a>
+      <a class="nav-link font-['Antonio'] uppercase tracking-tight text-xl text-[#1B1C1C] dark:text-[#FBF9F8] opacity-60 hover:opacity-100 transition-opacity duration-300" href="#work">Work</a>
+      <a class="nav-link font-['Antonio'] uppercase tracking-tight text-xl text-[#1B1C1C] dark:text-[#FBF9F8] opacity-60 hover:opacity-100 transition-opacity duration-300" href="./index.html#about">About</a>
+      <a class="nav-link font-['Antonio'] uppercase tracking-tight text-xl text-[#1B1C1C] dark:text-[#FBF9F8] opacity-60 hover:opacity-100 transition-opacity duration-300" href="./index.html#faq">FAQ</a>
+    </div>
+    <button class="bg-primary text-on-primary px-6 py-2 rounded-sm font-label uppercase tracking-widest text-xs active:scale-95 transition-transform absolute right-8">
+      Let's Talk
+    </button>
+  </div>
+</nav>
+<main class="pt-40 pb-32">
+<!-- Hero Section -->
+<section class="px-6 md:px-12 max-w-[1920px] mx-auto mb-20">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-4xl">
+<span class="block font-label text-xs tracking-[0.3em] uppercase text-primary mb-4">Vault 2018 — 2024</span>
+<h1 class="font-headline text-7xl md:text-[9rem] leading-[0.85] tracking-tighter uppercase font-bold text-on-surface">
+                        PROJECT<br/>ARCHIVE
+                    </h1>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4 pb-4">
+<button class="filter-btn font-label text-xs tracking-widest uppercase border-b-2 border-primary pb-1 text-on-surface" data-filter="all">All Works</button>
+<button class="filter-btn font-label text-xs tracking-widest uppercase opacity-40 hover:opacity-100 transition-opacity pb-1 text-on-surface" data-filter="vfx">VFX Artist</button>
+<button class="filter-btn font-label text-xs tracking-widest uppercase opacity-40 hover:opacity-100 transition-opacity pb-1 text-on-surface" data-filter="photography">Photography</button>
+<button class="filter-btn font-label text-xs tracking-widest uppercase opacity-40 hover:opacity-100 transition-opacity pb-1 text-on-surface" data-filter="achievements">Achivements</button>
+</div>
+</div>
+</section>
+<!-- Project Grid (Asymmetric Editorial) -->
+<section class="px-6 md:px-12 max-w-[1920px] mx-auto">
+    <div class="editorial-grid">
+    <!-- Project 01: Large Focal -->
+        <div class="col-span-12 md:col-span-8 group cursor-pointer mb-12" data-category="vfx">
+            <div class="relative overflow-hidden aspect-[16/9] bg-surface-dim mb-6">
+                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A cinematic low-angle shot of a brutalist concrete building against a stormy indigo sky. Soft cinematic lighting hits the edges of the structure, creating a high-contrast architectural look. The mood is moody and sophisticated, matching a professional film portfolio aesthetic with deep shadows and sharp highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW08MEOUBE3ZUKCFhBk9h5ag1UUOFFsN3W16a68401FwOtRJgsLyBETkk1DF3I5NKe6zjli25YowMlj73qTm8aFsEvbFtTC95jfIwwD70D1i-XB33rumqelWZwXsUtWGQsYMy8qdWaIwpZLJeGWv8tvTnMOeOibnkINDItKRcJYS7hftGg6o0l97Hls12ngoqr7cRSkiguHpRdYpitgC_HE-a8nK09o_ZUXIlgy3G5xqJxHM1ONz1lhoaKDtck1COVOjOgs8fIBLs"/>
+                <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            </div>
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="font-headline text-3xl uppercase tracking-tighter mb-1">Ethereal Fragments</h3>
+                    <p class="font-body text-sm text-on-surface/60 uppercase tracking-widest">Narrative • 2024</p>
+                </div>
+                <span class="material-symbols-outlined text-primary text-3xl group-hover:translate-x-2 transition-transform duration-300">arrow_forward</span>
+            </div>
+        </div>
+        <!-- Project 02: Small Offset -->
+        <div class="col-span-12 md:col-span-4 group cursor-pointer md:mt-32 mb-12" data-category="photography">
+        <div class="relative overflow-hidden aspect-[4/5] bg-surface-dim mb-6">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A minimalist close-up of a glass of water on a reflective surface with sharp shadows and cobalt blue refractions. The lighting is harsh and direct, creating an avant-garde editorial look. The composition is clean with significant whitespace around the subject, evoking a high-end luxury feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt21pEu276Mx7FYtq2C6B9MvRfxDegVHKwM3LKtwBCsBuXt3K0TIWJPcUB3Nob418xaTAjAg4Vw2qJe0qo49QRUIxwPLZ_K7Yi9sQ_oPCugMEDfqRPPLlUov3RRPlEjI4IAlYmOkffJrUvuBy2lhs2_hz5TeWvkFKAZ_J1Gx1jhXTmSru8fT4HqAgZNefAZtLQpLYocpk7wkAUQrl_HAZN4UZCq5JY-a7ZCsIVNKjVwgsAjxSYVjWht99ciNDqx30JM7VPmLPHdvE"/>
+        <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        </div>
+        <div>
+        <h3 class="font-headline text-3xl uppercase tracking-tighter mb-1">Liquid State</h3>
+        <p class="font-body text-sm text-on-surface/60 uppercase tracking-widest">Experimental • 2023</p>
+        </div>
+        </div>
+        <!-- Project 03: Medium Center -->
+        <div class="col-span-12 md:col-span-5 group cursor-pointer mb-12" data-category="photography">
+        <div class="relative overflow-hidden aspect-square bg-surface-dim mb-6">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A wide cinematic shot of an empty desert road at twilight, with the distant glow of a city in a deep indigo hue. The lighting is soft and ambient with long purple shadows stretching across the sand. The image feels quiet, expansive, and high-quality, fitting a premium digital archive." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfhbULOxwZdmcopqPXNUBw78lhlJvz9DTz4vYp2pUE1HqjVG_PxNTaSJ8_tNHJn6ps1RKaYMZzFhVWKx3-fgMX1aHzBXWtn7cwb8TIJ9EvMgYtzOoTC7fpcTI6w5ckEvPYg0wtjbRbj6QSRgZ72eG_17a9W4_9v1H85YeIiSbmTzbczTupLr7NXNN3hEWWpeK9xXCxU3UVocZnOp___89ext7XgNdeu709c6-vm17TAyegqlBPRoQ00GyhpgQRfUsSJLgJNJVIvJ0"/>
+        <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        </div>
+        <div>
+        <h3 class="font-headline text-3xl uppercase tracking-tighter mb-1">The Silent Mile</h3>
+        <p class="font-body text-sm text-on-surface/60 uppercase tracking-widest">Commercial • 2023</p>
+        </div>
+        </div>
+        <!-- Project 04: Large Offset -->
+        <div class="col-span-12 md:col-span-7 group cursor-pointer md:-mt-20 mb-12" data-category="photography">
+        <div class="relative overflow-hidden aspect-[3/2] bg-surface-dim mb-6">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A highly detailed portrait of a person partially obscured by a soft blue semi-transparent fabric. The lighting is diffused and ethereal, creating a sense of mystery and depth. The color palette is dominated by off-whites and muted indigos, maintaining a clean architectural tone throughout." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANiwQ2UXR2whrSVhLupF_Nw9tbfskl1DHy7JB14JcKjTlV3Fbj3jmrf52FMGf0L2oL_LXLgDbj2KQGFrSRZAG2wTvRm6l89fLIO7Wc9Sfqkp3Un-k9gczVHjQ9NW-jO_pAKWf9wMlYStISD1fmlOIdeArOMmlyviP97xa1cg_y-y6CQ4ipKQhBk-9FGr072_JdBkBpGr_qttuf7aa1q6t5r5qmt0KsOB1MEd_pHhZmnsU8YcW4BufjA5220Zdf8U2YcGwI76syFdo"/>
+        <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        </div>
+        <div class="flex justify-between items-start">
+        <div>
+        <h3 class="font-headline text-3xl uppercase tracking-tighter mb-1">Veiled Reality</h3>
+        <p class="font-body text-sm text-on-surface/60 uppercase tracking-widest">Experimental • 2022</p>
+        </div>
+        </div>
+        </div>
+        <!-- Project 05: Portrait Slice -->
+        <div class="col-span-12 md:col-span-4 group cursor-pointer mb-12" data-category="photography">
+        <div class="relative overflow-hidden aspect-[2/3] bg-surface-dim mb-6">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A vertical composition featuring abstract light trails in electric blue and soft white against a charcoal black background. The image is sleek and modern, utilizing a long exposure technique to create fluid motion. This piece represents a high-end digital art style within a minimalist gallery framework." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFSaSG4uSRqErHeGpuW2g-sLgXS26b3-OPIdA3XH-1nRK9o2IIUkLBky4IJt8aiYh5Ttm_RNECT_tCWoEAOD3E7e4FD2u5NupAwlCjCJZxpIxKansRvO_PreWiJ4RaSZOiY_n_y6dnbKvejNLijlNF2JjgVJwhwjZOiDlvaL-ttCYw8wa9ZABZ8mTnzgibdsAVgSsaW7KodBjeBoditAWrhTkRhlAW4I-5AS9LSCST8OkF5DwkoCk8xcPsooI5yHAkj8LppZ89B8g"/>
+        <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        </div>
+        <div>
+        <h3 class="font-headline text-3xl uppercase tracking-tighter mb-1">Chronos</h3>
+        <p class="font-body text-sm text-on-surface/60 uppercase tracking-widest">Narrative • 2022</p>
+        </div>
+        </div>
+        <!-- Project 06: Wide Base -->
+        <div class="col-span-12 md:col-span-8 group cursor-pointer mb-12" data-category="photography">
+        <div class="relative overflow-hidden aspect-[16/7] bg-surface-dim mb-6">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An expansive panoramic view of a modern minimalist interior with floor-to-ceiling windows overlooking a foggy mountain range. The room is styled with sharp-edged furniture and soft indigo textiles. Natural morning light spills across the floor, creating a serene and curated atmosphere for a high-end portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQWB9geqjRBwbO8KrJsxsgUj-T22V22_vWHl4vfllPOzXyDZ1NXHKnTK28Pf4YkwCO7DF3SxdZD_XBtKRp6K7QnYdfJcZSPTIRN_aZJd-BRZzGtFZkM3OuTgnNXdKf0rP4PbOWgdMg1k9IcK7WyNqQBF4cfJ1vYl1Sv48iNc7KRk99gQE0yaFvAtUFovA1v3mS1C7XTJyLOCbrvLxtU2bQSpKT_OoG1zshAaU83Kp7TngjDP_-VFR5E_8P1obP9ZrIDwWOgAsY5R0"/>
+        <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        </div>
+        <div class="flex justify-between items-start">
+        <div>
+        <h3 class="font-headline text-3xl uppercase tracking-tighter mb-1">Inner Sanctum</h3>
+        <p class="font-body text-sm text-on-surface/60 uppercase tracking-widest">Commercial • 2021</p>
+        </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+</main>
+  <div id="footer"></div>
+
+ <script src="./js/index.js"></script>
+
+</body></html>
